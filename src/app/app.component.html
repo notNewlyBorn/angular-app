@@ -1,5 +1,19 @@
 <!--The whole content below can be removed with the new code.-->
-<div style="text-align:center">
+<div class="main">
+  <h1>Item's list</h1>
+  <div class="addItem">
+    <input type="text" placeholder="Add item here" class="addText">
+    <button type="button" class="addItemButton">Add</button>
+  </div>
+  <ul>
+    <li *ngFor = "let i of items">
+      {{i}}
+      <span>X</span>
+    </li>
+  </ul>
+</div>
+
+<!-- <div style="text-align:center">
   <h1>
     Welcome to {{title}}!!
   </h1>
@@ -8,10 +22,16 @@
     <li *ngFor = "let i of arr">{{i}}</li>
   </ul>
   <p *ngIf = "isTrue">{{title}}</p>
-  <p *ngIf = "ok">{{ok}}</p>
+  <p *ngIf = "ok; then someTemplate else anotherTemplate">{{ok}}</p>
 
-<a routerLink="/members">Members</a>
-<a routerLink="/product">Product</a>
-<br>
+  <ng-template #someTemplate>This is some template to show</ng-template>
+  <br>
+  <ng-template #anotherTemplate>This is another template</ng-template>
+  <br>
 
-<router-outlet></router-outlet>
+  <a routerLink="/members">Members</a>
+  <a routerLink="/product">Product</a>
+  <br>
+  <router-outlet></router-outlet>
+
+</div> -->
