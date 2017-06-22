@@ -21,4 +21,8 @@ export class AppComponent {
   deleteItem = function(item){
     this.items.splice(item, 1);
   }
+
+  onSubmitForm(user) {
+    console.log(user);
+  }
 }

@@ -12,7 +12,14 @@
     </li>
   </ul>
   <p>{{ day | date }}</p>
-  <ul>
-    <li>{{arr | sort: 'ascending'}}</li>
-  </ul>
+  <p>Sorted array: {{arr | sort: 'ascending'}}</p>
+
+  <form class="formContainer"
+        #userForm = "ngForm"
+        (ngSubmit) = "onSubmitForm(userForm.value)"
+  >
+  <input type="text" name="name" placeholder="name" ngModel>
+  <input type="text" name="proffession" placeholder="proffession" ngModel>
+  <input type="submit" value="submit">
+  </form>
 </div>
