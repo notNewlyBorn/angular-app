@@ -1,0 +1,9 @@
+.git
+index.js
+index.d.ts
+src/*/*/*.js
+src/*/*/*.d.ts
+src/*/*.js
+src/*/*.d.ts
+src/*.js
+src/*.d.ts
