@@ -7,6 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   items = ["angular", "react", "ember"];
+  arr = [5, 6, 2, 11, 100, 43];
   newItem = "";
   day = new Date();
 
@@ -20,12 +21,4 @@ export class AppComponent {
   deleteItem = function(item){
     this.items.splice(item, 1);
   }
-  // title = 'My app';
-  // obj = {
-  //   id: "12",
-  //   name: "nafis"
-  // };
-  // arr = ['some', 'tjhog', 'is not'];
-  // isTrue = true;
-  // ok = false
 }

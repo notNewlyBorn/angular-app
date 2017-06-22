@@ -6,9 +6,11 @@ import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { ProductComponent } from './product/product.component';
 import { MembersComponent } from './members/members.component';
+import { SortPipe } from './app.sortPipe';
 
 @NgModule({
   declarations: [
+    SortPipe,
     AppComponent,
     ProductComponent,
     MembersComponent
